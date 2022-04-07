@@ -1,0 +1,14 @@
+.main-nav {
+  &__list {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    list-style-type: none;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #000000;
+  }
+}

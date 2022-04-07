@@ -1,0 +1,25 @@
+.main-container-promo {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 400;
+
+  &__wrapper {
+    background: url("../img/green-screen.png"), url("../img/index-background-cat.jpg");
+    background-repeat: no-repeat;
+  }
+
+  &__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  &__description {
+    line-height: 14px;
+  }
+
+  &__button {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
