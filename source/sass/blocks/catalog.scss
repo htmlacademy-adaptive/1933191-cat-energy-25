@@ -1,37 +1,35 @@
-.catalog {
-  &__cards {
-    list-style-type: none;
-  }
+.catalog__cards {
+  list-style-type: none;
+}
 
-  &__title {
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 36px;
-  }
+.catalog__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+}
 
-  &__name {
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
-  }
+.catalog__name {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
 
-  &__list {
-    list-style-type: none;
-  }
+.catalog__list {
+  list-style-type: none;
+}
 
-  &__item {
-    color: #444444;
-    font-family: "Arial", sans-serif;
-    font-size: 12px;
-    line-height: 16px;
-  }
+.catalog__item {
+  color: #444444;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+}
 
-  &__button {
-    text-transform: uppercase;
-    font-size: 16px;
-    line-height: 20px;
-    color: #ffffff;
-    background-color: #68b738;
-    border: none;
-  }
+.catalog__button {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #68b738;
+  border: none;
 }

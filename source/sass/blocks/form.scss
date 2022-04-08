@@ -1,70 +1,67 @@
-.form {
-  &__title {
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 36px;
-  }
+.form__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+}
 
-  &__description {
-    text-transform: uppercase;
-    font-size: 14px;
-  }
+.form__description {
+  text-transform: uppercase;
+  font-size: 14px;
+}
 
-  &__cat-list {
-    list-style-type: none;
-  }
+.form__cat-list {
+  list-style-type: none;
+}
 
-  &__label {
-    font-size: 16px;
-    color: #444444;
-    text-transform: uppercase;
-  }
+.form__label {
+  font-size: 16px;
+  color: #444444;
+  text-transform: uppercase;
+}
 
-  &__input-name {
-    font-size: 16px;
-    line-height: 18px;
-    font-family: "Oswald", sans-serif;
-    color: #444444;
-    text-transform: uppercase;
-  }
+.form__input-name {
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Oswald", sans-serif;
+  color: #444444;
+  text-transform: uppercase;
+}
 
-  &__program-list {
-    list-style-type: none;
-  }
+.form__program-list {
+  list-style-type: none;
+}
 
-  &__program-description {
-    font-size: 16px;
-    text-transform: uppercase;
-    color: #222222;
-  }
+.form__program-description {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #222222;
+}
 
-  &__name {
-    font-size: 24px;
-    line-height: 26px;
-    font-weight: 400;
-  }
+.form__name {
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 400;
+}
 
-  &__owner-list {
-    list-style-type: none;
-  }
+.form__owner-list {
+  list-style-type: none;
+}
 
-  &__option-description {
-    font-size: 16px;
-    text-transform: uppercase;
-  }
+.form__option-description {
+  font-size: 16px;
+  text-transform: uppercase;
+}
 
-  &__submit {
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
-    color: #ffffff;
-    background-color: #68b738;
-    border: none;
-  }
+.form__submit {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #68b738;
+  border: none;
+}
 
-  &__legend {
-    line-height: 16px;
-    font-family: "Arial", sans-serif;
-  }
-
+.form__legend {
+  line-height: 16px;
+  font-family: "Arial", sans-serif;
 }

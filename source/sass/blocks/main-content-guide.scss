@@ -1,12 +1,10 @@
-.main-content-guide {
-  &__title {
-    font-size: 36px;
-    line-height: 40px;
-    font-weight: 400;
-  }
+.main-content-guide__title {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+}
 
-  &__description {
-    font-family: "Arial", sans-serif;
-    color: #444444;
-  }
+.main-content-guide__description {
+  font-family: "Arial", sans-serif;
+  color: #444444;
 }

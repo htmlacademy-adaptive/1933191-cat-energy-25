@@ -1,10 +1,7 @@
-
-.main-header-container {
-  &__toggle {
-    width: 24px;
-    height: 18px;
-    background-image: url("../img/navigation-icon.svg");
-    background-repeat: no-repeat;
-    border: none;
-  }
+.main-header-container__toggle {
+  width: 24px;
+  height: 18px;
+  background-image: url("../img/navigation-icon.svg");
+  background-repeat: no-repeat;
+  border: none;
 }
