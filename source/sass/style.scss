@@ -1,3 +1,6 @@
+@use "global/fonts.scss";
+@use "global/global.scss";
+@use "global/variables.scss";
 @use "blocks/header.scss";
 @use "blocks/main-nav.scss";
 @use "blocks/main-container-promo.scss";
@@ -16,43 +19,3 @@
 @use "blocks/additional.scss";
 @use "blocks/catalog-promo.scss";
 @use "blocks/form.scss";
-
-@font-face {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/oswaldregular.woff") format("woff");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 500;
-  src: url("../fonts/oswaldmedium.woff") format("woff");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/oswaldregular.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 500;
-  src: url("../fonts/oswaldmedium.woff2") format("woff2");
-  font-display: swap;
-}
-
-body {
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-}
-
