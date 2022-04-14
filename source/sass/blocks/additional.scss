@@ -1,6 +1,20 @@
+.additional {
+  width: 280px;
+  padding: 0;
+  border: 0;
+}
+
+.additional__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
 .additional__title {
   font-size: 24px;
   line-height: 24px;
+  margin: 0;
+  padding: 0;
 }
 
 .additional__name {
@@ -8,6 +22,14 @@
   line-height: 16px;
   color: #222222;
   text-transform: uppercase;
+}
+
+.additional__description {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .additional__sum {
@@ -20,4 +42,57 @@
   color: #444444;
   line-height: 14px;
   font-family: "Arial", sans-serif;
+}
+
+.additional__button {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #68b738;
+  border: none;
+  display: block;
+  width: 280px;
+  height: 40px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .additional {
+    width: 708px;
+  }
+
+  .additional__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .additional__button {
+    width: 632px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional {
+    width: 896px;
+    display: inline-block;
+  }
+
+  .additional__item {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .additional__wrapper {
+    width: 70%;
+  }
+
+  .additional__description {
+    width: 50%;
+  }
+
+  .additional__button {
+    width: 244px;
+    margin: 0;
+  }
 }

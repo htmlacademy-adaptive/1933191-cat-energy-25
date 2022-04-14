@@ -1,0 +1,70 @@
+$tablet-width: 768px;
+$desktop-width: 1220px;
+
+.main-header-wrapper {
+  width: 280px;
+  height: 65px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.main-header-wrapper__toggle {
+  width: 24px;
+  height: 18px;
+  background-image: url("../img/navigation-icon.svg");
+  background-repeat: no-repeat;
+  border: none;
+}
+
+.main-header-wrapper__logo {
+  display: block;
+  width: 34px;
+  height: 38px;
+  background-image: url("../img/logo-mobile.svg");
+  background-repeat: no-repeat;
+}
+
+.main-header-wrapper__name {
+  width: 101px;
+  height: 18px;
+}
+
+.main-header-wrapper__name-logo {
+  fill: #111111;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header-wrapper {
+    width: 708px;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
+  }
+
+  .main-header-wrapper__toggle {
+    display: none;
+  }
+
+  .main-header-wrapper__logo {
+    width: 61px;
+    height: 51px;
+    background-image: url("../img/logo-tablet.svg");
+    background-repeat: no-repeat;
+  }
+
+  .main-header-wrapper__name-logo {
+    fill: #444444;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header-wrapper__logo {
+    width: 70px;
+    height: 59px;
+    background-image: url("../img/logo-desktop.svg");
+    background-repeat: no-repeat;
+  }
+}

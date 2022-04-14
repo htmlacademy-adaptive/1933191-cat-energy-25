@@ -3,3 +3,10 @@
   line-height: 20px;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .slider__container {
+    background-color: #eaeaea;
+  }
+}
+

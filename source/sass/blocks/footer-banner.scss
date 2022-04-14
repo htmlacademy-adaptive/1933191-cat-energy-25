@@ -1,3 +1,10 @@
+.footer-banner {
+  display: flex;
+  width: 280px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
 .footer-banner__title {
   font-size: 16px;
   line-height: 18px;
@@ -6,4 +13,12 @@
 
 .footer-banner__image {
   fill: #666666;
+}
+
+@media (min-width: $tablet-width) {
+  .footer-banner {
+    width: 163px;
+    justify-content: flex-end;
+    margin: 0;
+  }
 }

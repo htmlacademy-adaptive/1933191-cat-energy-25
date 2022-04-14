@@ -11,3 +11,18 @@
   color: #ffffff;
   font-family: "Arial", sans-serif;
 }
+
+@media (min-width: $tablet-width) {
+  .catalog-promo {
+    width: 707px;
+    height: 200px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-promo {
+    width: 245px;
+    height: 289px;
+    display: inline-block;
+  }
+}

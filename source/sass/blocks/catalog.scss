@@ -1,5 +1,13 @@
+.catalog {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .catalog__cards {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
 }
 
 .catalog__title {
@@ -32,4 +40,34 @@
   color: #ffffff;
   background-color: #68b738;
   border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    width: 708px;
+  }
+
+  .catalog__cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .catalog__card {
+    width: 324px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    width: 1220px;
+  }
+
+  .catalog__cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .catalog__card {
+    width: 245px;
+  }
 }

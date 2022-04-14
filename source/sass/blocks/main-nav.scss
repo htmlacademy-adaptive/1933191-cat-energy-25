@@ -4,9 +4,41 @@
   line-height: 20px;
   text-transform: uppercase;
   list-style-type: none;
+  padding: 0;
+  width: 320px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-nav__item {
+  border: 1px solid #e6e6e6;
+  width: 320px;
+  height: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .main-nav__link {
   text-decoration: none;
   color: #000000;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__list {
+    width: 440px;
+    flex-direction: row;
+  }
+
+  .main-nav__item {
+    border: none;
+    height: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__list {
+    width: 478px;
+  }
 }

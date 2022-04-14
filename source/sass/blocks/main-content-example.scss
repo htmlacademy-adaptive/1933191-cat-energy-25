@@ -1,3 +1,10 @@
+.main-content-example {
+  background-color: #eaeaea;
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
 .main-content-example__title {
   font-weight: 400;
   font-size: 36px;
@@ -9,4 +16,43 @@
   line-height: 18px;
   color: #444444;
   font-family: "Arial", sans-serif;
+}
+
+.main-content-example__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main-content-example__cost {
+  display: block;
+  text-align: center;
+  width: 188px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-content-example {
+    background: none;
+    width: 708px;
+  }
+
+  .main-content-example__wrapper {
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-content-example {
+    width: 1220px;
+    padding: 0;
+  }
+
+  .main-content-example__title {
+    padding-left: 110px;
+  }
+
+  .main-content-example__container {
+    background-color: #eaeaea;
+    padding: 0 110px;
+  }
 }
