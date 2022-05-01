@@ -1,13 +1,19 @@
 .main-content-example-expenses {
   width: 124px;
+  min-height: 56px;
   display: flex;
   flex-direction: column;
   text-align: center;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  position: relative;
 }
 
 .main-content-example-expenses__title {
   font-size: 24px;
   line-height: 24px;
+  margin: auto 0;
+  text-transform: uppercase;
 }
 
 .main-content-example-expenses__description {
@@ -15,4 +21,57 @@
   line-height: 12px;
   font-family: "Arial", sans-serif;
   color: #444444;
+  width: 87px;
+  min-height: 24px;
+  background: #eaeaea;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -15px;
+}
+
+@media (max-width: $mobile-width-only) {
+
+}
+
+@media (min-width: $tablet-width) {
+  .main-content-example-expenses {
+    width: 162px;
+    min-height: 77px;
+    margin-bottom: 40px;
+  }
+
+  .main-content-example-expenses:not(:first-child) {
+    margin-left: 42px;
+  }
+
+  .main-content-example-expenses__title {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .main-content-example-expenses__description {
+    font-size: 14px;
+    line-height: 14px;
+    width: 150px;
+    background-color: #ffffff;
+  }
+
+  .main-content-example-expenses__description br {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-content-example-expenses {
+    margin: 0;
+  }
+
+  .main-content-example-expenses__description {
+    background: #eaeaea;
+    width: auto;
+    display: block;
+    white-space: nowrap;
+    padding: 0 8px;
+  }
 }

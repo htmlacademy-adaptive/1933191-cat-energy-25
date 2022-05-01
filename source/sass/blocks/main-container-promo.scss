@@ -6,7 +6,6 @@
   background: url("../img/green-screen.png"), url("../img/index-background-cat.jpg");
   background-repeat: no-repeat;
   width: 320px;
-  height: 480px;
   margin: 0 auto;
 }
 
@@ -15,17 +14,34 @@
   line-height: 36px;
   font-weight: 400;
   margin: 0;
+  text-align: center;
+  padding-top: 27px;
 }
 
 .main-container-promo__description {
   line-height: 14px;
   text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding-top: 25px;
+}
+
+.main-container-promo__image-can {
+  display: block;
+  margin: 0 auto;
+  margin-top: 29px;
 }
 
 .main-container-promo__button {
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  width: 280px;
+  margin: 0 auto;
+  padding: 14px 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -33,19 +49,67 @@
     color: #000000;
     background: none;
     width: 709px;
-    height: 810px;
+    min-height: 810px;
+  }
+
+  .main-container-promo__title {
+    text-align: start;
+    width: 419px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .main-container-promo__description {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: start;
+    padding-top: 41px;
   }
 
   .main-container-promo__image-can {
     position: absolute;
+    width: 709px;
+    z-index: -1;
+  }
+
+  .main-container-promo__button {
+    font-size: 20px;
+    line-height: 20px;
+    width: 244px;
+    padding: 17px 0;
+    margin: 0;
+    margin-top: 49px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-container-promo__wrapper {
-    background: url("../img/green-screen.png"), url("../img/index-background-cat.jpg");
+    background: url("../img/green-screen.png"), url("../img/index-background-desktop.jpg");
+    background-position: right;
     background-repeat: no-repeat;
-    width: 920px;
+    width: 1140px;
     height: 499px;
+    position: relative;
+    padding-left: 80px;
+  }
+
+  .main-container-promo__title {
+    padding-top: 94px;
+  }
+
+  .main-container-promo__description {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: start;
+    padding-top: 41px;
+  }
+
+  .main-container-promo__image-can {
+    width: 552px;
+    z-index: 1;
+    margin: 0;
+    right: 200px;
+    top: 0;
+
   }
 }

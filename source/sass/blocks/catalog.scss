@@ -3,6 +3,15 @@
   margin: 0 auto;
 }
 
+.catalog__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0;
+  margin-top: 27px;
+  margin-bottom: 41px;
+}
+
 .catalog__cards {
   list-style-type: none;
   margin: 0;
@@ -10,20 +19,44 @@
   display: grid;
 }
 
-.catalog__title {
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 36px;
+.catalog__card {
+  padding-bottom: 25px;
+}
+
+.catalog__container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 13px;
+  padding-top: 19px;
+  border-top: 1px solid #ebebeb;
+}
+
+.catalog__image-wrapper {
+  width: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .catalog__name {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  margin-left: auto;
+  display: inline-block;
+  width: 76px;
+  margin-bottom: 18px;
 }
 
 .catalog__list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 142px;
+  flex-wrap: wrap;
+  margin-left: auto;
 }
 
 .catalog__item {
@@ -31,15 +64,24 @@
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
+  width: 65px;
+
+}
+
+.catalog__item:nth-child(even) {
+  text-align: end;
 }
 
 .catalog__button {
   text-transform: uppercase;
   font-size: 16px;
   line-height: 20px;
+  font-family: "Oswald", sans-serif;
   color: #ffffff;
   background-color: #68b738;
   border: none;
+  width: 280px;
+  padding: 10px 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -51,10 +93,57 @@
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
   }
 
   .catalog__card {
     width: 324px;
+    background: #f2f2f2;
+  }
+
+  .catalog__container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    border: none;
+    margin-bottom: 33px;
+  }
+
+  .catalog__image-wrapper {
+    height: 206px;
+  }
+
+  .catalog__name {
+    font-size: 20px;
+    line-height: 24px;
+    width: 140px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    margin-top: 34px;
+    margin-bottom: 12px;
+  }
+
+  .catalog__list {
+
+    width: 247px;
+
+  }
+
+  .catalog__item {
+    font-size: 16px;
+    line-height: 16px;
+    width: 50%;
+    padding-bottom: 9px;
+    border-bottom: 1px solid #cdcdcd;
+    border-collapse: collapse;
+    margin-top: 7px;
+  }
+
+  .catalog__button {
+    width: 248px;
+    display: block;
+    margin: 0 auto;
   }
 }
 
@@ -65,9 +154,18 @@
 
   .catalog__cards {
     grid-template-columns: repeat(4, 1fr);
+    gap: 63px 80px;
   }
 
   .catalog__card {
     width: 245px;
+  }
+
+  .catalog__list {
+    width: 169px;
+  }
+
+  .catalog__button {
+    width: 168px;
   }
 }

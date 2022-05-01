@@ -1,0 +1,23 @@
+.main-header {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 17px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 708px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    width: 1220px;
+    padding-top: 25px;
+  }
+}
