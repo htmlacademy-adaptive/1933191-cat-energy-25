@@ -3,6 +3,16 @@
   height: 290px;
   background: url("../img/green-screen.png"), url("../img/cat-package.jpg");
   background-repeat: no-repeat;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.catalog-promo__image {
+  margin-top: 40px;
 }
 
 .catalog-promo__description {
@@ -10,12 +20,17 @@
   line-height: 20px;
   color: #ffffff;
   font-family: "Arial", sans-serif;
+  width: 161px;
+  text-align: center;
+  margin-bottom: 25px;
 }
 
 @media (min-width: $tablet-width) {
   .catalog-promo {
     width: 707px;
     height: 200px;
+    flex-direction: row;
+    background-size: cover;
   }
 }
 
@@ -23,6 +38,11 @@
   .catalog-promo {
     width: 245px;
     height: 289px;
-    display: inline-block;
+    margin: 0;
+    flex-direction: column;
+  }
+
+  .catalog-promo__image {
+    margin-top: 25px;
   }
 }

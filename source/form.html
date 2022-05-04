@@ -8,11 +8,11 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <div class="main-header-container">
-        <div class="main-header-wrapper">
-          <a class="main-header-wrapper__logo"></a>
-          <div class="main-header-wrapper__name">
-            <svg class="main-header-wrapper__name-logo"  width="101" height="18" aria-hidden="true" focusable="false" viewBox="0 0 101 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <div class="main-header-wrapper">
+        <div class="main-header-wrapper__link">
+          <div class="main-header-wrapper__logo">
+          </div>
+          <svg class="main-header-wrapper__name-logo"  width="101" height="18" aria-hidden="true" focusable="false" viewBox="0 0 101 18" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_135_3354)">
             <path d="M1.26449 16.5385C0.36955 15.2762 -0.0747041 13.7627 1.02073e-05 12.2308V5.84615C-0.108365 4.29774 0.308071 2.75746 1.18546 1.46154C2.05478 0.461538 3.39829 0 5.37403 0C7.34978 0 8.61425 0.461538 9.40455 1.30769C10.2626 2.37941 10.6846 3.72136 10.59 5.07692V6.61539H6.71754V4.84615C6.74881 4.32289 6.66808 3.799 6.48045 3.30769C6.38016 3.10938 6.2212 2.9448 6.02403 2.83513C5.82686 2.72547 5.60049 2.67572 5.37403 2.69231C4.82082 2.69231 4.42568 2.84615 4.26762 3.23077C4.08883 3.77733 4.00862 4.34988 4.03053 4.92308V13.1538C3.98879 13.71 4.0978 14.267 4.34665 14.7692C4.5047 15.1538 4.89985 15.3077 5.45306 15.3077C6.00627 15.3077 6.32239 15.1538 6.48045 14.7692C6.66013 14.2494 6.74049 13.7019 6.71754 13.1538V11.3077H10.59V12.8462C10.6704 14.2238 10.2508 15.5852 9.40455 16.6923C8.61425 17.6154 7.27075 18.0769 5.37403 18.0769C3.47732 18 2.05478 17.5385 1.26449 16.5385Z" fill="#111111"/>
             <path d="M15.2527 0.23077H19.7574L23.0767 17.7692H19.4413L18.8091 14.0769H16.2011L15.5689 17.7692H11.8545L15.2527 0.23077ZM18.493 11.7692L17.5446 4.92308L16.5963 11.7692H18.493Z" fill="#111111"/>
@@ -30,25 +30,23 @@
             <rect width="101" height="18" fill="white"/>
             </clipPath>
             </defs>
-            </svg>
-          </div>
-          <button class="main-header-wrapper__toggle" type="button">
-          </button>
+          </svg>
         </div>
-        <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a href="index.html" class="main-nav__link">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="catalog.html" class="main-nav__link">Каталог продукции</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="form.html" class="main-nav__link">Подбор программы</a>
-            </li>
-          </ul>
-        </nav>
+        <button class="main-header-wrapper__toggle main-header-wrapper__toggle--closed main-header-wrapper__toggle--nojs" type="button"></button>
       </div>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <ul class="main-nav__list main-nav__list--closed">
+          <li class="main-nav__item">
+            <a href="index.html" class="main-nav__link">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="catalog.html" class="main-nav__link">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item main-nav--current">
+            <a href="form.html" class="main-nav__link">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main class="main-form">
       <h1 class="visually-hidden">Анкета для подбора питания</h1>
@@ -63,38 +61,47 @@
               <ul class="form__cat-list">
                 <li class="form__cat-item">
                   <span class="form__label">Имя:*</span>
-                  <input class="form__input form__input-name" type="text" placeholder="Барсик" required>
+                  <input class="form__input form__input-name" type="text" name="cat-name" placeholder="Барсик" required>
                 </li>
                 <li class="form__cat-item ">
                   <span class="form__label">Вес (КГ):*</span>
-                  <input class="form__input form__input-weight" type="number" placeholder="7" required>
+                  <input class="form__input form__input-weight" type="number" name="cat-weight" placeholder="7" required>
                 </li>
                 <li class="form__cat-item">
                   <span class="form__label">Возраст (Лет):</span>
-                  <input class="form__input form__input-age" type="number" placeholder="7">
+                  <input class="form__input form__input-age" type="number" name="cat-age" placeholder="7">
                 </li>
-
               </ul>
               <ul class="form__program-list">
                 <li class="form__program-item">
-                  <input class="form__program-input" type="radio">
-                  <span class="form__program-description">Похудение</span>
+                  <label for="program-loss">
+                    <input class="form__program-input" type="radio" name="optional" id="program-loss" checked>
+                    <span class="form__control-radio" tabindex="0"></span>
+                    <span class="form__program-description">Похудение</span>
+                  </label>
                 </li>
                 <li class="form__program-item">
-                  <input class="form__program-input" type="radio">
-                  <span class="form__program-description">Набор массы</span>
+                  <label for="program-gain">
+                    <input class="form__program-input" type="radio" name="optional" id="program-gain">
+                    <span class="form__control-radio" tabindex="0"></span>
+                    <span class="form__program-description">Набор массы</span>
+                  </label>
                 </li>
                 <li class="form__program-item">
-                  <input class="form__program-input" type="radio">
-                  <span class="form__program-description">Не знаю (Нужен ваш совет)</span>
+                  <label for="program-idk">
+                    <input class="form__program-input" type="radio" name="optional" id="program-idk">
+                    <span class="form__control-radio" tabindex="0"></span>
+                    <span class="form__program-description">Не знаю (Нужен ваш совет)</span>
+                  </label>
                 </li>
               </ul>
             </div>
           </fieldset>
           <fieldset class="form__wrapper">
-            <legend>
-              <h2 class="form__name">Контактные данные (владельца кота)</h2>
+            <legend class="form__legend">
+              <h2 class="form__name">Контактные данные <br> (владельца кота)</h2>
             </legend>
+            <div class="form__outline form__outline--position"></div>
             <ul class="form__owner-list">
               <li class="form__owner-item">
                 <span class="form__label">E-mail:*</span>
@@ -107,31 +114,45 @@
             </ul>
           </fieldset>
           <fieldset class="form__wrapper">
-            <legend>
+            <legend class="form__legend">
               <h2 class="form__name">Комментарий</h2>
             </legend>
-            <input type="text" class="form__comment" placeholder="Расскажите обо всех повадках кота">
+            <div class="form__outline"></div>
+            <textarea type="text" class="form__comment" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
           <fieldset class="form__wrapper">
-            <legend>
+            <legend class="form__legend">
               <h2 class="form__name">Дополнительно</h2>
             </legend>
+            <div class="form__outline"></div>
             <ul class="form__options-list">
-              <li class="form__options-item">
-                <input class="form__option-input" type="checkbox" checked>
-                <span class="form__option-description">Сахарозаменитель</span>
+              <li class="form__options-item" >
+                <label class="form__options-control" for="option-sweetener">
+                  <input class="form__option-input" type="checkbox" checked id="option-sweetener">
+                  <span class="form__control-mark" tabindex="0"></span>
+                  <span class="form__option-description">Сахарозаменитель</span>
+                </label>
               </li>
               <li class="form__options-item">
-                <input class="form__option-input" type="checkbox">
-                <span class="form__option-description">Питьевая вода</span>
+                <label class="form__options-control" for="option-water">
+                  <input class="form__option-input" type="checkbox" value="drink-water" id="option-water">
+                  <span class="form__control-mark" tabindex="0"></span>
+                  <span class="form__option-description">Питьевая вода</span>
+                </label>
               </li>
               <li class="form__options-item">
-                <input class="form__option-input" type="checkbox">
-                <span class="form__option-description">Молоко</span>
+                <label class="form__options-control" for="option-milk">
+                  <input class="form__option-input" type="checkbox" value="milk" id="option-milk">
+                  <span class="form__control-mark" tabindex="0"></span>
+                  <span class="form__option-description">Молоко</span>
+                </label>
               </li>
-              <li class="form__options-item">
-                <input class="form__option-input" type="checkbox">
-                <span class="form__option-description">Витамины</span>
+              <li class="form__options-item" for="option-vitamins">
+                <label class="form__options-control" for="option-vitamins">
+                  <input class="form__option-input" type="checkbox" id="option-vitamins">
+                  <span class="form__control-mark" tabindex="0"></span>
+                  <span class="form__option-description">Витамины</span>
+                </label>
               </li>
             </ul>
           </fieldset>
@@ -219,6 +240,6 @@
       </div>
     </div>
   </footer>
-
+  <script src="../js/script.js"></script>
   </body>
 </html>
