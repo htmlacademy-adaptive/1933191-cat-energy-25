@@ -1,0 +1,52 @@
+.location {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.location__wrapper {
+  width: 280px;
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 0;
+}
+
+.location__title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  width: 139px;
+  margin: 0;
+}
+
+.location__description {
+  line-height: 20px;
+  color: #444444;
+  width: 139px;
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .location {
+    width: 628px;
+  }
+
+  .location__wrapper {
+    width: 628px;
+
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .location {
+    width: 565px;
+  }
+
+  .location__wrapper {
+    position: absolute;
+    justify-content: center;
+    width: 405px;
+    padding: 56px 80px;
+    background-color: #ffffff;
+  }
+}

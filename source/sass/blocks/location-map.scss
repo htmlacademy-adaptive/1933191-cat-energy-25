@@ -1,0 +1,28 @@
+.location-map__container {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.location-map__pin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%), translateX(-50%);
+}
+
+.location-map__image {
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .location-map__container {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .location-map__container {
+    width: 1220px;
+  }
+}

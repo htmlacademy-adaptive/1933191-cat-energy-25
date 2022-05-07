@@ -1,0 +1,28 @@
+.footer-banner {
+  display: flex;
+  width: 280px;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 13px;
+  align-items: center;
+}
+
+.footer-banner__title {
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Arial", sans-serif;
+  color: #444444;
+}
+
+.footer-banner__image {
+  fill: #666666;
+}
+
+@media (min-width: $tablet-width) {
+  .footer-banner {
+    width: 163px;
+    justify-content: space-between;
+    margin: 0;
+  }
+}
