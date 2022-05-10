@@ -58,6 +58,8 @@
     width: 246px;
     min-height: 280px;
     display: block;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   .main-content-guide__image {
@@ -74,14 +76,53 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .main-content-guide {
+    padding-left: 30px;
+    width: 738px;
+  }
+
+  .main-content-guide__item {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      color: #f2f2f2;
+      font-size: 280px;
+      line-height: 280px;
+      z-index: -1;
+      right: 0;
+    }
+  }
+
+  .main-content-guide__item--tree-leaf::before {
+    content: "1";
+    right: 21px;
+  }
+
+  .main-content-guide__item--powder::before {
+    content: "2";
+  }
+
+  .main-content-guide__item--eat::before {
+    content: "3";
+  }
+
+  .main-content-guide__item--timer::before {
+    content: "4";
+  }
+}
+
 @media (min-width: $desktop-width) {
   .main-content-guide {
     width: 1220px;
+    padding: 0;
   }
 
   .main-content-guide__list {
-    grid-template-columns: 230px 246px 248px 250px;
-    gap: 94px;
+    grid-template-columns: repeat(4, 247px);
+    gap: 77px;
     border: none;
   }
 

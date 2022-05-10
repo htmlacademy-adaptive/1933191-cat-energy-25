@@ -19,8 +19,17 @@
   .footer-social {
     border: none;
   }
-  .footer-social__list {
 
+  .footer-social__image {
+    fill: #666666;
 
+    &:hover {
+      fill: #68b738;
+    }
+
+    &:active {
+      fill: #68b738;
+      opacity: 0.3;
+    }
   }
 }
