@@ -5,13 +5,28 @@
   padding-bottom: 40px;
 }
 
+.slider__item--skinny {
+  display: none;
+}
+
 .slider__status {
-  border-radius: 6px;
+  border-radius: 7px;
   width: 85px;
   height: 14px;
   border: 1px solid #cdcdcd;
   background: #ffffff;
   margin: 8px 13px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 6px;
+    background: #68b738;
+    border-radius: 6px;
+    margin: 4px;
+  }
 }
 
 .slider__label {
@@ -25,6 +40,26 @@
     background-color: #eaeaea;
     width: 768px;
     min-height: 462px;
+    position: relative;
+  }
+
+  .slider__container::before {
+    position: absolute;
+    content: "";
+    width: calc((100vw - 708px) / 2);
+    height: 100%;
+    background-color: #eaeaea;
+    left: calc(((100vw - 708px) / 2) * -1);
+  }
+
+  .slider__container::after {
+    position: absolute;
+    content: "";
+    width: calc((100vw - 708px) / 2);
+    height: 100%;
+    background-color: #eaeaea;
+    right: calc(((100vw - 708px) / 2) * -1);
+    top: 0;
   }
 
   .slider__items {
@@ -35,6 +70,23 @@
   .slider__item {
     width: 296px;
     height: 339px;
+  }
+
+  .slider__item--skinny {
+    display: block;
+  }
+
+  .main-content-example__image {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .main-content-example__image--fat {
+    object-position: -7px;
+  }
+
+  .main-content-example__image--skinny {
+    object-position: right;
   }
 
   .slider__wrapper {
@@ -52,8 +104,11 @@
     height: 6px;
     border: none;
     background: #dcdcdc;
-    position: relative;
     margin: 17px 13px;
+
+    &::before {
+      display: none;
+    }
   }
 
   .slider__point {
@@ -64,6 +119,8 @@
     border: 1px solid #cdcdcd;
     position: absolute;
     top: -14px;
+    transform: translateX(-50%);
+    filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
 
     &::after {
       position: absolute;
@@ -76,6 +133,15 @@
       top: 50%;
       transform: translate(-50%, -50%);
     }
+
+    &:hover {
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
+    }
+
+    &:active {
+      border: 1px solid #68b738;
+      filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.2));
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -84,8 +150,18 @@
       padding: 0;
     }
 
+    .slider__container::before {
+      display: none;
+    }
+
+    .slider__container::after {
+      display: none;
+    }
+
     .slider__items {
       justify-content: end;
+      position: relative;
+      left: 21px;
     }
   }
 }

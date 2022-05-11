@@ -22,6 +22,10 @@
   width: 100%;
   display: flex;
   align-items: flex-start;
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .main-header-wrapper__logo {
@@ -38,7 +42,7 @@
 
 @media (max-width: $mobile-width-only) {
   .main-header-wrapper__toggle--opened {
-    background-image: url("../img/icon-close.svg");
+    background-image: url("../img/close-mark.svg");
     background-repeat: no-repeat;
     background-color: #ffffff;
   }
@@ -55,6 +59,16 @@
     margin: 0;
   }
 
+  .main-header-wrapper__link {
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.8;
+    }
+  }
+
   .main-header-wrapper__toggle {
     display: none;
   }
@@ -68,6 +82,7 @@
 
   .main-header-wrapper__name-logo {
     fill: #444444;
+    margin-left: 14px;
   }
 }
 

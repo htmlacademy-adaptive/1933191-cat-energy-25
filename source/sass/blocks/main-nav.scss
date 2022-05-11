@@ -19,11 +19,22 @@
   border-top: 1px solid #e6e6e6;
   padding: 22px;
   text-align: center;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-nav__link {
   text-decoration: none;
   color: #000000;
+  display: block;
+  height: 100%;
+
 }
 
 @media (max-width: $mobile-width-only) {
@@ -33,6 +44,7 @@
 
   .main-nav--opened {
     display: block;
+    margin-top: 20px;
   }
 
   .main-nav--nojs {
@@ -74,9 +86,21 @@
       width: 100%;
       background-color: #68b738;
       height: 2px;
-      bottom: 10px;
+      bottom: 5px;
+      left: 0;
     }
   }
+
+  .main-nav--current:hover.main-nav--current::before {
+    background-color: #000000;
+    opacity: 0.6;
+  }
+
+  .main-nav--current:active.main-nav--current::before {
+    background-color: #000000;
+    opacity: 0.3;
+  }
+
 }
 
 @media (min-width: $desktop-width) {
@@ -88,5 +112,37 @@
     font-size: 20px;
     width: 46%;
     justify-content: space-between;
+  }
+
+  .main-nav--current-white.main-nav--current::before {
+    display: none;
+  }
+
+  .main-nav--current-white {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      background-color: #ffffff;
+      height: 2px;
+      bottom: 5px;
+      left: 0;
+    }
+  }
+
+  .main-nav--current--white:hover.main-nav--current--white::before {
+    background-color: #ffffff;
+    opacity: 0.6;
+  }
+
+  .main-nav--current--white:active.main-nav--current--white::before {
+    opacity: 0.3;
+    background-color: #ffffff;
+  }
+
+  .main-nav__link--white {
+    color: #ffffff;
   }
 }
