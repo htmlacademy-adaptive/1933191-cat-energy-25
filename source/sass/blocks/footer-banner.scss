@@ -1,4 +1,4 @@
-.footer-banner {
+.footer-banner__link {
   display: flex;
   width: 280px;
   margin: 0 auto;
@@ -6,6 +6,7 @@
   padding-top: 20px;
   padding-bottom: 13px;
   align-items: center;
+  text-decoration: none;
 }
 
 .footer-banner__title {
@@ -20,9 +21,28 @@
 }
 
 @media (min-width: $tablet-width) {
-  .footer-banner {
+  .footer-banner__link {
     width: 163px;
     justify-content: space-between;
     margin: 0;
+
+    &:active {
+      opacity: 0.3;
+    }
   }
+
+  .footer-banner__image {
+    fill: #666666;
+    display: block;
+
+    &:hover {
+      fill: #68b738;
+    }
+
+  }
+
+  .footer-banner__link:active > .footer-banner__image {
+    fill: #68b738;
+  }
+
 }
