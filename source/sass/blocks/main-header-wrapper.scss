@@ -31,8 +31,6 @@
 .main-header-wrapper__logo {
   width: 34px;
   height: 38px;
-  background-image: url("../img/logo-mobile.svg");
-  background-repeat: no-repeat;
 }
 
 .main-header-wrapper__name-logo {
@@ -76,8 +74,7 @@
   .main-header-wrapper__logo {
     width: 61px;
     height: 51px;
-    background-image: url("../img/logo-tablet.svg");
-    background-repeat: no-repeat;
+
   }
 
   .main-header-wrapper__name-logo {
@@ -95,7 +92,6 @@
   .main-header-wrapper__logo {
     width: 70px;
     height: 59px;
-    background-image: url("../img/logo-desktop.svg");
-    background-repeat: no-repeat;
+
   }
 }
