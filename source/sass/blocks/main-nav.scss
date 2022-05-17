@@ -1,0 +1,148 @@
+.main-nav {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.main-nav__list {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-nav__item {
+  border-top: 1px solid #e6e6e6;
+  padding: 22px;
+  text-align: center;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav__link {
+  text-decoration: none;
+  color: #000000;
+  display: block;
+  height: 100%;
+
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-nav--closed {
+    display: none;
+  }
+
+  .main-nav--opened {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .main-nav--nojs {
+    display: block;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: 100%;
+    display: flex;
+    margin: 0;
+    justify-content: flex-end;
+  }
+
+  .main-nav__list {
+    flex-direction: row;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0;
+    width: 77%;
+    justify-content: space-between;
+  }
+
+  .main-nav__item {
+    border: none;
+    width: auto;
+    padding: 0;
+    padding-top: 14px;
+  }
+
+  .main-nav--current {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      background-color: #68b738;
+      height: 2px;
+      bottom: 5px;
+      left: 0;
+    }
+  }
+
+  .main-nav--current:hover.main-nav--current::before {
+    background-color: #000000;
+    opacity: 0.6;
+  }
+
+  .main-nav--current:active.main-nav--current::before {
+    background-color: #000000;
+    opacity: 0.3;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    justify-content: end;
+  }
+
+  .main-nav__list {
+    font-size: 20px;
+    width: 46%;
+    justify-content: space-between;
+  }
+
+  .main-nav--current-white.main-nav--current::before {
+    display: none;
+  }
+
+  .main-nav--current-white {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      background-color: #ffffff;
+      height: 2px;
+      bottom: 5px;
+      left: 0;
+    }
+  }
+
+  .main-nav--current--white:hover.main-nav--current--white::before {
+    background-color: #ffffff;
+    opacity: 0.6;
+  }
+
+  .main-nav--current--white:active.main-nav--current--white::before {
+    opacity: 0.3;
+    background-color: #ffffff;
+  }
+
+  .main-nav__link--white {
+    color: #ffffff;
+  }
+}

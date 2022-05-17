@@ -1,0 +1,35 @@
+.footer-social {
+  width: 280px;
+  margin: 0 auto;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.footer-social__list {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 128px;
+
+}
+
+@media (min-width: $tablet-width) {
+  .footer-social {
+    border: none;
+  }
+
+  .footer-social__image {
+    fill: #666666;
+
+    &:hover {
+      fill: #68b738;
+    }
+
+    &:active {
+      fill: #68b738;
+      opacity: 0.3;
+    }
+  }
+}
