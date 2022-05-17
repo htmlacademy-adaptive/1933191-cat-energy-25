@@ -14,14 +14,16 @@
   width: 128px;
 }
 
+.footer-social__image {
+  fill: #666666;
+}
+
 @media (min-width: $tablet-width) {
   .footer-social {
     border: none;
   }
 
   .footer-social__image {
-    fill: #666666;
-
     &:hover {
       fill: #68b738;
     }
