@@ -95,7 +95,7 @@
   width: calc((100vw - 280px) / 2);
   height: 100%;
   border-top: 1px solid #d9d9d9;
-  border-bottom: 1px solid #d9d9d9;;
+  border-bottom: 1px solid #d9d9d9;
   right: calc(((100vw - 280px) / 2) * -1);
   top: -1px;
 }
@@ -339,6 +339,7 @@
   .form__program-list::after {
     display: none;
   }
+
   .form__program-item:not(:last-child) {
     margin-bottom: 19px;
   }
