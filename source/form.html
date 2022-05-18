@@ -186,11 +186,15 @@
         </section>
         <div class="location-map">
           <a class="location-map__link" href="#">
-              <picture>
-                <source media="(min-width: 1220px)" srcset="img/location-desktop.jpg 1x, img/location-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/location-tablet.jpg 1x, img/location-tablet@2x.jpg 2x">
-                <img class="location-map__image" src="img/location-mobile.jpg" srcset="../img/location-mobile@2x.jpg 2x" width="320px" height="362px" alt="Местонахождение Cat Energy.">
-              </picture>
+            <picture>
+              <source media="(min-width: 1220px)" srcset="img/location-desktop.webp 1x, img/location-desktop@2x.webp 2x">
+              <source media="(min-width: 768px)" srcset="img/location-tablet.webp 1x, img/location-tablet@2x.webp 2x">
+              <source srcset="img/location-mobile.webp 1x, img/location-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1220px)" srcset="img/location-desktop.jpg 1x, img/location-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/location-tablet.jpg 1x, img/location-tablet@2x.jpg 2x">
+              <img class="location-map__image" src="img/location-mobile.jpg" srcset="../img/location-mobile@2x.jpg 2x" width="320px" height="362px" alt="Местонахождение Cat Energy.">
+            </picture>
           </a>
         </div>
       </div>
