@@ -113,6 +113,19 @@
     margin-bottom: 214px;
     margin-top: 53px;
   }
+
+  .slider__label {
+    border-bottom: 1px dotted  rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+  }
+
+  .slider__label:hover {
+    border-bottom: 1px solid  rgba(0, 0, 0, 0.3);
+  }
+
+  .slider__label:active {
+    border-bottom: none;
+  }
 }
 
 @media (min-width: $desktop-width) {
