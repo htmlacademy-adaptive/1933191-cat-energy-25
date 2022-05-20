@@ -57,7 +57,7 @@
   margin-bottom: 40px;
 }
 
-.main-content-example__image {
+.slider__image {
   margin-bottom: 15px;
 }
 
@@ -85,12 +85,15 @@
   .main-content-example__title {
     font-size: 60px;
     line-height: 60px;
+    padding: 0;
+    margin-top: 55px;
   }
 
   .main-content-example__description {
     font-size: 16px;
     line-height: 24px;
-    width: 436px;
+    width: 700px;
+    padding-top: 25px;
   }
 
   .main-content-example__cost {
@@ -99,34 +102,16 @@
     text-align: right;
     margin-left: auto;
     font-size: 20px;
-    line-height: 20px;
-    margin-top: 11px;
+    line-height: 27px;
+    margin-top: 9px;
+    margin-right: 4px;
+    text-transform: uppercase;
   }
 
   .main-content-example__wrapper {
     justify-content: flex-start;
-    margin-bottom: 210px;
-    margin-top: 54px;
-  }
-
-  .main-content-example__image {
-    height: 511px;
-    margin: 0;
-    position: relative;
-    bottom: 172px;
-  }
-
-  .slider__label {
-    border-bottom: 1px dotted  rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-  }
-
-  .slider__label:hover {
-    border-bottom: 1px solid  rgba(0, 0, 0, 0.3);
-  }
-
-  .slider__label:active {
-    border-bottom: none;
+    margin-bottom: 214px;
+    margin-top: 53px;
   }
 }
 
@@ -136,7 +121,7 @@
   }
 
   .main-content-example__container {
-    background-color: #eaeaea;
+    background-color: #f2f2f2;
     display: flex;
   }
 
@@ -145,7 +130,7 @@
     content: "";
     width: calc((100vw - 1220px) / 2);
     height: 462px;
-    background-color: #eaeaea;
+    background-color: #f2f2f2;
     left: calc(((100vw - 1220px) / 2) * -1);
   }
 
@@ -154,7 +139,7 @@
     content: "";
     width: calc((100vw - 1220px) / 2);
     height: 462px;
-    background-color: #eaeaea;
+    background-color: #f2f2f2;
     right: calc(((100vw - 1220px) / 2) * -1);
   }
 
@@ -165,11 +150,13 @@
 
   .main-content-example__title {
     margin-bottom: 76px;
+    margin-top: 36px;
   }
 
   .main-content-example__description {
-    margin-top: 70px;
+    margin-top: 45px;
     margin-bottom: 70px;
+    width: 436px;
   }
 
   .main-content-example__description br {
@@ -181,6 +168,6 @@
     width: 327px;
     display: flex;
     justify-content: space-between;
-    margin-top: 60px;
+    margin-top: 54px;
   }
 }

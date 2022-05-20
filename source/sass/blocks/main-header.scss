@@ -4,7 +4,7 @@
   width: 280px;
   margin: 0 auto;
   padding-top: 10px;
-  padding-bottom: 17px;
+  padding-bottom: 14px;
 }
 
 @media (min-width: $tablet-width) {
@@ -12,12 +12,13 @@
     flex-direction: row;
     justify-content: space-between;
     width: 708px;
+    padding-top: 25px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-header {
     width: 1220px;
-    padding-top: 58px;
+    padding-top: 54px;
   }
 }

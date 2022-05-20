@@ -10,10 +10,19 @@
   left: 138px;
 }
 
+.location-map__link {
+  position: relative;
+  bottom: -3px;
+ }
+
 
 @media (min-width: $tablet-width) {
   .location-map {
     width: 768px;
+  }
+
+  .location-map__link {
+    display: block;
   }
 
   .location-map__image {

@@ -9,6 +9,7 @@
   font-weight: 400;
   margin: 0;
   margin-bottom: 40px;
+  margin-top: 2px;
 }
 
 .main-content-guide__list {
@@ -23,6 +24,29 @@
 .main-content-guide__item {
   width: 280px;
   display: flex;
+  justify-content: space-between;
+}
+
+.main-content-guide__image-wrapper {
+  position: relative;
+  width: 60px;
+  height: 60px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: #68b738;
+  }
+}
+
+.main-content-guide__image {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  top: 50%;
+  transform: translate(0, -50%);
 }
 
 .main-content-guide__description {
@@ -31,23 +55,30 @@
   padding-left: 20px;
   padding-top: 2px;
   padding-bottom: 4px;
+  width: 200px;
+}
+
+.main-content-guide__description br {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
   .main-content-guide {
-    width: 768px;
+    padding-left: 30px;
+    width: 738px;
   }
+
 
   .main-content-guide__title {
     font-size: 60px;
     line-height: 60px;
-    margin-top: 45px;
-    margin-bottom: 32px;
+    margin-top: 49px;
+    margin-bottom: 34px;
   }
 
   .main-content-guide__list {
     grid-template-columns: 1fr 1fr;
-    gap: 37px 153px;
+    gap: 37px 30px;
     margin: 0;
     padding-bottom: 32px;
     border-bottom: 1px solid #e6e6e6;
@@ -60,29 +91,6 @@
     display: block;
     font-size: 16px;
     line-height: 24px;
-  }
-
-  .main-content-guide__image {
-    width: 80px;
-    height: 80px;
-    display: block;
-    margin-top: 40px;
-  }
-
-  .main-content-guide__description {
-    padding: 0;
-    display: block;
-    margin-top: 31px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .main-content-guide {
-    padding-left: 30px;
-    width: 738px;
-  }
-
-  .main-content-guide__item {
     position: relative;
 
     &::before {
@@ -101,7 +109,7 @@
     right: 21px;
   }
 
-  .main-content-guide__item--powder::before {
+  .main-content-guide__item--tub::before {
     content: "2";
   }
 
@@ -112,12 +120,41 @@
   .main-content-guide__item--timer::before {
     content: "4";
   }
+
+  .main-content-guide__image-wrapper {
+    width: 80px;
+    height: 80px;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  .main-content-guide__image {
+    margin-top: 40px;
+  }
+
+  .main-content-guide__description {
+    padding: 0;
+    display: block;
+    width: auto;
+    margin-top: 31px;
+  }
+
+  .main-content-guide__description br {
+    display: block;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .main-content-guide {
     width: 1220px;
     padding: 0;
+  }
+
+  .main-content-guide__title {
+    margin-top: 72px;
   }
 
   .main-content-guide__list {

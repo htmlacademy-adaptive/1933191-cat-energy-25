@@ -23,6 +23,12 @@
     border: none;
   }
 
+  .footer-social__list {
+    width: 135px;
+    position: relative;
+    left: 12px;
+  }
+
   .footer-social__image {
     &:hover {
       fill: #68b738;
@@ -34,3 +40,10 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .footer-social__list {
+    left: 17px;
+  }
+}
+

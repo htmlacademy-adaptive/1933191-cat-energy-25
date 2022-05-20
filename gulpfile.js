@@ -29,6 +29,7 @@ export const styles = () => {
     .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
     .pipe(rename('style.min.css'))
     .pipe(gulp.dest('build/css'))
+    .pipe(browser.stream());
 }
 
 
@@ -96,6 +97,8 @@ export const server = (done) => {
   });
   done();
 }
+
+//reload
 
 const reload = (done) => {
   browser.reload();
