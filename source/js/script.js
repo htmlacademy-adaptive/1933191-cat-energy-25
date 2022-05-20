@@ -20,4 +20,3 @@ navToggle.addEventListener('click', function () {
     navToggle.classList.remove('main-header-wrapper__toggle--opened');
   }
 });
-
