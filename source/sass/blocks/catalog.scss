@@ -36,6 +36,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  top: 13px;
 }
 
 .catalog__name {
@@ -45,7 +47,10 @@
   margin-left: auto;
   display: inline-block;
   width: 76px;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
+  position: relative;
+  top: 2px;
+  left: 3px;
 }
 
 .catalog__list {
@@ -82,6 +87,7 @@
   width: 280px;
   padding: 10px 0;
   cursor: pointer;
+  margin-top: 7px;
 }
 
 @media (min-width: $tablet-width) {
@@ -93,6 +99,7 @@
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 82px;
+    margin-top: 50px;
   }
 
   .catalog__cards {
@@ -197,6 +204,10 @@
     width: 1220px;
   }
 
+  .catalog__title {
+    margin-top: 59px;
+  }
+
   .catalog__cards {
     grid-template-columns: repeat(4, 1fr);
     gap: 63px 80px;
@@ -214,10 +225,13 @@
   .catalog__image--big {
     width: 172px;
     height: 202px;
+    position: relative;
+    bottom: 10px;
   }
 
   .catalog__list {
-    width: 169px;
+    width: 165px;
+    padding-top: 4px;
   }
 
   .catalog__button {

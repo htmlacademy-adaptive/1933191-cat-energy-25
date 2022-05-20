@@ -4,16 +4,18 @@
   display: block;
 }
 
-.location-map__pin {
-  position: absolute;
-  top: 153px;
-  left: 138px;
+.location-map__link {
+  position: relative;
+  bottom: -3px;
 }
-
 
 @media (min-width: $tablet-width) {
   .location-map {
     width: 768px;
+  }
+
+  .location-map__link {
+    display: block;
   }
 
   .location-map__image {
@@ -30,6 +32,7 @@
   .location-map__link {
     margin: 0 auto;
     display: block;
+    bottom: 0;
   }
 
   .location-map__image {

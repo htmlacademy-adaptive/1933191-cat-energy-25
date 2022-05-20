@@ -44,23 +44,30 @@
   line-height: 20px;
   color: #444444;
   width: 139px;
+  font-family: "Arial", sans-serif;
 }
 
 @media (min-width: $tablet-width) {
   .location__wrapper {
     width: 628px;
-    padding: 60px 0;
+    padding: 59px 0;
   }
 
   .location__title {
     font-size: 20px;
     line-height: 26px;
+    width: 170px;
   }
 
+
   .location__description {
+    width: 160px;
     display: flex;
     justify-content: space-between;
+    font-size: 16px;
+    line-height: 20px;
     flex-direction: column;
+    text-align: end;
   }
 }
 
@@ -75,6 +82,7 @@
     background-color: #ffffff;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 1;
   }
 
   .location__wrapper--background::before {

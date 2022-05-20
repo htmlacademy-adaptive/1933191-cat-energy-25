@@ -15,7 +15,7 @@
   height: 14px;
   border: 1px solid #cdcdcd;
   background: #ffffff;
-  margin: 8px 13px;
+  margin: 4px 17px;
   position: relative;
 
   &::before {
@@ -41,6 +41,7 @@
     width: 768px;
     min-height: 462px;
     position: relative;
+    left: -29px;
   }
 
   .slider__container::before {
@@ -76,20 +77,25 @@
     display: block;
   }
 
-  .main-content-example__image {
+  .slider__image {
     width: 100%;
     object-fit: cover;
+    height: 511px;
+    margin: 0;
+    position: relative;
+    bottom: 172px;
   }
 
-  .main-content-example__image--fat {
-    object-position: -7px;
+  .slider__image--fat {
+    object-position: -7px -5px;
   }
 
-  .main-content-example__image--skinny {
+  .slider__image--skinny {
     object-position: right;
   }
 
   .slider__wrapper {
+    margin-top: 26px;
     padding-bottom: 56px;
     justify-content: center;
   }
@@ -97,6 +103,16 @@
   .slider__label {
     font-size: 20px;
     line-height: 30px;
+    border-bottom: 1px dotted  rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+  }
+
+  .slider__label:hover {
+    border-bottom: 1px solid  rgba(0, 0, 0, 0.3);
+  }
+
+  .slider__label:active {
+    border-bottom: none;
   }
 
   .slider__status {
@@ -104,7 +120,7 @@
     height: 6px;
     border: none;
     background: #dcdcdc;
-    margin: 17px 13px;
+    margin: 17px 24px;
 
     &::before {
       display: none;
@@ -143,25 +159,45 @@
       filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.2));
     }
   }
+}
 
-  @media (min-width: $desktop-width) {
-    .slider__wrapper {
-      justify-content: end;
-      padding: 0;
-    }
+@media (min-width: $desktop-width) {
+  .slider__container {
+    width: auto;
+    background: none;
+  }
 
-    .slider__container::before {
-      display: none;
-    }
+  .slider__items {
+    width: auto;
+    justify-content: end;
+    position: relative;
+    left: 21px;
+  }
 
-    .slider__container::after {
-      display: none;
-    }
+  .slider__item {
+    position: relative;
+    left: 10px;
+    bottom: 8px;
+  }
 
-    .slider__items {
-      justify-content: end;
-      position: relative;
-      left: 21px;
-    }
+  .slider__image--fat {
+    object-position: -7px -10px;
+    width: 100%;
+  }
+
+  .slider__wrapper {
+    justify-content: end;
+    padding: 0;
+    position: relative;
+    right: -22px;
+    margin-top: 15px;
+  }
+
+  .slider__container::before {
+    display: none;
+  }
+
+  .slider__container::after {
+    display: none;
   }
 }
