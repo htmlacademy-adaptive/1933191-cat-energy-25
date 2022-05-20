@@ -1,12 +1,16 @@
 .main-container-promo {
   color: #ffffff;
+  position: relative;
 }
 
-.main-container-promo__wrapper {
+.main-container-promo__background {
   background: url("../img/green-screen.png"), url("../img/index-background-cat.jpg");
   background-repeat: no-repeat;
-  width: 320px;
-  margin: 0 auto;
+  background-size: cover;
+  position: absolute;
+  width: 100vw;
+  height: 302px;
+  z-index: -1;
 }
 
 .main-container-promo__title {
@@ -45,11 +49,20 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main-container-promo {
+    position: static;
+  }
+
+  .main-container-promo__background {
+    display: none;
+  }
+
   .main-container-promo__wrapper {
     color: #000000;
     background: none;
     width: 621px;
     min-height: 810px;
+    margin: 0 auto;
     position: relative;
     padding-left: 88px;
     margin-bottom: 20px;
@@ -104,16 +117,31 @@
     margin-bottom: 0;
   }
 
-  .main-container-promo__background {
-    width: 720px;
+  .main-container-promo__background-wrapper {
+    width: 100vw;
+    position: absolute;
     height: 694px;
-    background: url("../img/green-screen.png"), url("../img/index-background-desktop.jpg");
+    top: 0;
+    z-index: -1;
+  }
+
+  .main-container-promo__background-white {
+    width: 50%;
+    height: 694px;
+    position: absolute;
+    left: 0;
+  }
+
+  .main-container-promo__background {
+    display: block;
+    width: 51.6%;
+    min-height: 694px;
+    background: url("../img/green-screen.png"), url("../img/index-background-desktop.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 0;
     position: absolute;
-    top: -151px;
-    right: -110px;
-    z-index: -1;
+    right: -22px;
   }
 
   .main-container-promo__title {
