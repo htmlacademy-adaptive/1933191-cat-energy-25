@@ -14,14 +14,22 @@
   width: 128px;
 }
 
+.footer-social__image {
+  fill: #666666;
+}
+
 @media (min-width: $tablet-width) {
   .footer-social {
     border: none;
   }
 
-  .footer-social__image {
-    fill: #666666;
+  .footer-social__list {
+    width: 135px;
+    position: relative;
+    left: 12px;
+  }
 
+  .footer-social__image {
     &:hover {
       fill: #68b738;
     }
@@ -30,5 +38,11 @@
       fill: #68b738;
       opacity: 0.3;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer-social__list {
+    left: 17px;
   }
 }

@@ -35,7 +35,10 @@
 
 .main-header-wrapper__name-logo {
   fill: #111111;
+  width: auto;
   margin: auto;
+  position: relative;
+  left: -5px;
 }
 
 @media (max-width: $mobile-width-only) {
@@ -58,6 +61,8 @@
   }
 
   .main-header-wrapper__link {
+    width: 200px;
+
     &:hover {
       opacity: 0.8;
     }
@@ -73,22 +78,36 @@
 
   .main-header-wrapper__logo {
     width: 61px;
-    height: 51px;
+    height: 50px;
   }
 
   .main-header-wrapper__name-logo {
     fill: #444444;
-    margin-left: 14px;
+    margin-left: 17px;
+    width: 101px;
+    height: 18px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-header-wrapper {
-    width: 202px;
+    width: 222px;
+  }
+
+  .main-header-wrapper__link {
+    width: 220px;
   }
 
   .main-header-wrapper__logo {
-    width: 70px;
+    width: 77px;
     height: 59px;
+    position: relative;
+    right: 2px;
+  }
+
+  .main-header-wrapper__name-logo {
+    width: 130px;
+    height: 21px;
+    margin-left: 6px;
   }
 }

@@ -65,7 +65,7 @@
     font-size: 18px;
     line-height: 24px;
     margin: 0;
-    width: 77%;
+    width: 86.9%;
     justify-content: space-between;
   }
 
@@ -73,7 +73,7 @@
     border: none;
     width: auto;
     padding: 0;
-    padding-top: 14px;
+    padding-top: 18px;
   }
 
   .main-nav--current {
@@ -85,7 +85,7 @@
       width: 100%;
       background-color: #68b738;
       height: 2px;
-      bottom: 5px;
+      bottom: 2px;
       left: 0;
     }
   }
@@ -108,12 +108,16 @@
 
   .main-nav__list {
     font-size: 20px;
-    width: 46%;
+    width: 48%;
     justify-content: space-between;
   }
 
   .main-nav--current-white.main-nav--current::before {
     display: none;
+  }
+
+  .main-nav--outline.main-nav--current::before {
+    bottom: 7px;
   }
 
   .main-nav--current-white {
@@ -125,7 +129,7 @@
       width: 100%;
       background-color: #ffffff;
       height: 2px;
-      bottom: 5px;
+      bottom: 8px;
       left: 0;
     }
   }

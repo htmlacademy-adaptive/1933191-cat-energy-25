@@ -34,24 +34,28 @@
 @media (min-width: $tablet-width) {
   .main-content-example-expenses {
     width: 162px;
-    min-height: 77px;
+    min-height: 71px;
     margin-bottom: 40px;
   }
 
   .main-content-example-expenses:not(:first-child) {
-    margin-left: 42px;
+    margin-left: 40px;
   }
 
   .main-content-example-expenses__title {
     font-size: 30px;
     line-height: 37px;
+    margin-top: 14px;
+    margin-bottom: 0;
   }
 
   .main-content-example-expenses__description {
     font-size: 14px;
     line-height: 14px;
-    width: 150px;
+    width: auto;
     background-color: #ffffff;
+    white-space: nowrap;
+    padding: 0 8px;
   }
 
   .main-content-example-expenses__description br {
@@ -65,7 +69,7 @@
   }
 
   .main-content-example-expenses__description {
-    background: #eaeaea;
+    background: #f2f2f2;
     width: auto;
     display: block;
     white-space: nowrap;
