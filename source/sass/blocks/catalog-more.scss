@@ -10,6 +10,12 @@
   border-bottom: 1px solid #ebebeb;
 }
 
+.catalog-more__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .catalog-more__plus {
   margin-bottom: 23px;
   width: 30px;
