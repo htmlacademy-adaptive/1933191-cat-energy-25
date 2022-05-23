@@ -29,7 +29,7 @@
   width: calc(100vw / 2);
   height: 2px;
   background-color: #68b738;
-  right: calc((106vw / 2) * -1);
+  right: calc((100vw / 2) * -1);
   top: 59%;
 }
 
@@ -175,20 +175,13 @@
 }
 
 @media (min-width: $desktop-width) {
-  .additional__desktop-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-bottom: 86px;
-  }
-
   .additional {
     width: 896px;
   }
 
   .additional__title::after {
-    width: calc(140vw / 2);
-    right: calc((140vw / 2) * -1);
+    width: calc(100vw / 2);
+    right: calc((100vw / 2) * -1);
   }
 
   .additional__title {

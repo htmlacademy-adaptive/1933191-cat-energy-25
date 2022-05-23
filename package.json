@@ -22,7 +22,8 @@
     "build": "gulp build",
     "start": "gulp",
     "styles": "gulp styles",
-    "scripts": "gulp scripts"
+    "scripts": "gulp scripts",
+    "bem":"bem-validate"
   },
   "browserslist": [
     "last 2 versions",

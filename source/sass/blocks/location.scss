@@ -59,6 +59,16 @@
     width: 170px;
   }
 
+  .location__wrapper--background::before {
+    width: calc((100vw - 628px) / 2);
+    left: calc(((100vw - 628px) / 2) * -1);
+  }
+
+  .location__wrapper--background::after {
+    width: calc((100vw - 628px) / 2);
+    right: calc(((100vw - 628px) / 2) * -1);
+  }
+
 
   .location__description {
     width: 160px;
