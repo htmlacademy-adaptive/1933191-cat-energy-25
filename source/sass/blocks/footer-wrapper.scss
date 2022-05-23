@@ -45,10 +45,10 @@
   .footer-wrapper__social-container::after {
     position: absolute;
     content: "";
-    width: calc((100vw - 600px) / 2);
+    width: calc((100vw - 708px) / 2);
     height: 100%;
     background-color: #f2f2f2;
-    right: calc(((100vw - 600px) / 2) * -1);
+    right: calc(((100vw - 708px) / 2) * -1);
     top: 0;
   }
 
@@ -83,5 +83,15 @@
     min-height: 149px;
     position: relative;
     bottom: 4px;
+  }
+
+  .footer-wrapper__social-container::before {
+    width: calc((100vw - 1220px) / 2);
+    left: calc(((100vw - 1220px) / 2) * -1);
+  }
+
+  .footer-wrapper__social-container::after {
+    width: calc((100vw - 1220px) / 2);
+    right: calc(((100vw - 1220px) / 2) * -1);
   }
 }

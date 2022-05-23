@@ -1,0 +1,8 @@
+@media (min-width: $desktop-width) {
+  .additional-desktop-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 86px;
+  }
+}

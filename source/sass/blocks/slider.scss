@@ -47,19 +47,19 @@
   .slider__container::before {
     position: absolute;
     content: "";
-    width: calc((100vw - 708px) / 2);
+    width: calc((50vw - 708px) / 2);
     height: 100%;
     background-color: #eaeaea;
-    left: calc(((100vw - 708px) / 2) * -1);
+    left: calc(((50vw - 708px) / 2) * -1);
   }
 
   .slider__container::after {
     position: absolute;
     content: "";
-    width: calc((100vw - 708px) / 2);
+    width: calc((50vw - 708px) / 2);
     height: 100%;
     background-color: #eaeaea;
-    right: calc(((100vw - 708px) / 2) * -1);
+    right: calc(((50vw - 708px) / 2) * -1);
     top: 0;
   }
 
