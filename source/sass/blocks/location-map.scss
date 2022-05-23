@@ -3,8 +3,18 @@
   height: 362px;
 }
 
+.location-map__interactive {
+  width: 100%;
+  border: none;
+  height: 362px;
+}
+
 @media (min-width: $tablet-width) {
   .location-map {
+    height: 400px;
+  }
+
+  .location-map__interactive {
     height: 400px;
   }
 }
