@@ -118,7 +118,7 @@
   }
 
   .main-container-promo__background-wrapper {
-    width: 100vw;
+    width: 100%;
     position: absolute;
     height: 694px;
     top: 0;
@@ -126,7 +126,7 @@
   }
 
   .main-container-promo__background-white {
-    width: 50%;
+    width: 49.5%;
     height: 694px;
     position: absolute;
     left: 0;
@@ -134,7 +134,7 @@
 
   .main-container-promo__background {
     display: block;
-    width: 51.6%;
+    width: 50.5%;
     min-height: 694px;
     background: url("../img/green-screen.png"), url("../img/index-background-desktop.png");
     background-repeat: no-repeat;
@@ -142,6 +142,7 @@
     background-position: 0;
     position: absolute;
     right: 0;
+    background-color: #5eaa2f;
   }
 
   .main-container-promo__title {
@@ -153,6 +154,7 @@
     line-height: 20px;
     text-align: start;
     padding-top: 41px;
+    width: 368px;
   }
 
   .main-container-promo__image-can {

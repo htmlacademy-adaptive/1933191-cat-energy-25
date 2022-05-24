@@ -20,3 +20,6 @@ navToggle.addEventListener('click', function () {
     navToggle.classList.remove('main-header-wrapper__toggle--opened');
   }
 });
+
+document.querySelector ('.location-map__background--nojs').remove();
+
