@@ -22,4 +22,5 @@ navToggle.addEventListener('click', function () {
 });
 
 document.querySelector ('.location-map__background--nojs').remove();
-
+let location_map = document.querySelector('.location-map__interactive');
+location_map.classList.remove('location-map__interactive--nojs');
